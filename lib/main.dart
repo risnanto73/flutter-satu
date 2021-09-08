@@ -75,17 +75,18 @@ class PageHome extends StatelessWidget {
            * Untuk latihan buatlah 3 page : Login, SignUp dan Home,
            * 
            * Halaman Login : terdapat image/icon, TextFormField Email dan Password, 2 button (login dan signup)
-           * - Jika user click login maka di arahkan ke halaman home dengan membawa/mengirim data email dan password
+           * - Jika user click login maka di arahkan ke halaman home dengan membawa/mengirim data email dan password (passing data)
            * - Jika user click signup maka diarahkan ke halaman signup
            * 
            * Halaman Sign up: terdapat image/icon, TextFormField Email dan Passwod, 2 button (signup dan i have already account)
-           * - Jika user click signup di arahkan ke halaman home dengan membawa/mengirim data email dan password
+           * - Jika user click signup di arahkan ke halaman home dengan membawa/mengirim data email dan password  (passing data)
            * - Jika user click i have already account maka akan kembali ke login page
            * 
            * 
            * Halaman Home : Terdapat dua Text yaitu email dan password
            * - Email dan password diambil dari inputan halaman sebelumnya
-           *   */
+           *
+           *    */
 
           Container(
             child: FlatButton(
