@@ -7,22 +7,17 @@ void main() {
   runApp(MyApp());
 }
 
+/*
+ * class MyApp ini dibaratkan jika di android kotlin adalah
+ * MainActivity atau Activity yang pertama kali di jalankan saat membuka app
+ *   */
+
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
         primarySwatch: Colors.blue,
       ),
       home: PageHome(),
@@ -74,6 +69,24 @@ class PageHome extends StatelessWidget {
               child: Text('page 2'),
             ),
           ),
+
+          /*
+           * Lanjutkan page latihan dan next lanjut ke bab selanjut nya
+           * Untuk latihan buatlah 3 page : Login, SignUp dan Home,
+           * 
+           * Halaman Login : terdapat image/icon, TextFormField Email dan Password, 2 button (login dan signup)
+           * - Jika user click login maka di arahkan ke halaman home dengan membawa/mengirim data email dan password
+           * - Jika user click signup maka diarahkan ke halaman signup
+           * 
+           * Halaman Sign up: terdapat image/icon, TextFormField Email dan Passwod, 2 button (signup dan i have already account)
+           * - Jika user click signup di arahkan ke halaman home dengan membawa/mengirim data email dan password
+           * - Jika user click i have already account maka akan kembali ke login page
+           * 
+           * 
+           * Halaman Home : Terdapat dua Text yaitu email dan password
+           * - Email dan password diambil dari inputan halaman sebelumnya
+           *   */
+
           Container(
             child: FlatButton(
               onPressed: () {

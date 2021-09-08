@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
 
-class login extends StatelessWidget{
+/*
+ * Penamaan Class diharapkan menggunakan camel case atau kapital diawal
+ * example : class Login extends StatelessWidget{}
+ *   */
+
+class login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     throw UnimplementedError();
   }
-
 }
